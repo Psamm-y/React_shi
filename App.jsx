@@ -1,9 +1,13 @@
+import Footer from './Footer.jsx';
 import Header from './Header.jsx';
 
 function App() {
   return (
-    <Header></Header>
-  );
-}
-
-export default App
+    <>
+      <Header/>
+      <Footer />
+    </>
+      )
+};
+    
+export default App;
