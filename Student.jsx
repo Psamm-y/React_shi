@@ -12,7 +12,7 @@ function Student(props) {
   );
 }
 
-Student.propType ={
+Student.propTypes ={
   name: propType.string,
   age: propType.number,
   isStudent: propType.bool,
