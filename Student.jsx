@@ -1,13 +1,21 @@
+import propType from 'prop-types'
 
 function Student(props) {
   return (
     <div className="student">
       <p>Name: {props.name}</p>
       <p>Age: {props.age}</p>
-      <p>isStudent: {props.isStudent?"Yes":"No"}</p>
-      
+      <p>Student: {props.isStudent?"Yes":"No"}</p>
+      <p>Place of Stay: {props.location}</p>
+    
     </div>
   );
 }
 
+Student.propType ={
+  name: propType.string,
+  age: propType.number,
+  isStudent: propType.bool,
+  location: propType.string,
+}
 export default Student;
