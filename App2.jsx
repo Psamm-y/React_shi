@@ -9,8 +9,9 @@ function App2() {
       <Button />
       <Student name="Samuel" age={18} isStudent={true} location="Ofankor" />
       <Student name="Ichigo Kurosaki" age={21} isStudent={false} location="Pokuase" />
-      <Student name="Bernard" age="30" isStudent={false} location="Amasaman" />
+      <Student name="Bernard" age={30} isStudent={false} location="Amasaman" />
       <Student name="Fenuku Reynolds" age={19} isStudent={true} location="Pokuase" />
+      <Student/>
     </>
   );
 } 

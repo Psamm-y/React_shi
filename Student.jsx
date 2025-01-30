@@ -18,4 +18,11 @@ Student.propTypes ={
   isStudent: propType.bool,
   location: propType.string,
 }
+
+Student.defaultProps = {
+  name: "Guest",
+  age: 0,
+  isStudent: false,
+  location: "Location not provided"
+}
 export default Student;
