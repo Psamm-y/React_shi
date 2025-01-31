@@ -22,3 +22,17 @@ button:active {
   padding: 1em;
   margin: 0.8rem;
 }
+.welcomeMsg {
+  padding: 0.4em;
+  margin: 0;
+  background-color: hsl(114, 94%, 35%);
+  width: max-content;
+  border-radius: 0.2em;
+}
+.loginPrompt {
+  padding: 0.4em;
+  margin: 0;
+  background-color: hsl(0, 86%, 36%);
+  width: max-content;
+  border-radius: 0.2em;
+}
