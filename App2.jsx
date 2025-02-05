@@ -3,13 +3,21 @@ import Button from './Button.jsx';
 import Student from './Student.jsx';
 import UserGreeting from './USerGreeting.jsx';
 import List from './List.jsx'
+
 function App2() {
   const fruits = [{ id: 1, name: 'fig', calories: 43 },
   { id: 2, name: 'apple', calories: 95 },
   { id: 3, name: 'cherry', calories: 50 },
   { id: 4, name: 'banana', calories: 105 },
   { id: 5, name: 'date', calories: 80 },
-  { id: 6, name: 'grape', calories: 60 },];
+    { id: 6, name: 'grape', calories: 60 },];
+  
+  const vegetables = [{ id: 1, name: 'potatoes', calories: 110 },
+  { id: 2, name: 'apple', calories: 95 },
+  { id: 3, name: 'celery', calories: 15 },
+  { id: 4, name: 'carrots', calories: 25 },
+  { id: 5, name: 'corn', calories: 63 },
+    { id: 6, name: 'brocolli', calories: 50 },];
   return (
     <>
       <Card/>
@@ -20,6 +28,7 @@ function App2() {
       <Student name="Fenuku Reynolds" age={19} isStudent={true} location="Pokuase" />
       <UserGreeting isLoggedIn={true} userName="Psammy" />
       <List items={fruits} category="Fruits" />
+      <List items={vegetables} category="Veggies" />
     </>
   );
 } 
