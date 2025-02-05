@@ -14,7 +14,7 @@ function Button() {
   const handleClick = (e) => e.target.textContent = "Clicked ✅";
   return (
     // <button onClick={(e) => handleClick(e)}>Click me 😁</button>
-    <button onDOubleClick={(e) => handleClick(e)}>Click me 😁</button>
+    <button onDoubleClick={(e) => handleClick(e)}>Click me 😁</button>
 
   )
 }
