@@ -9,9 +9,12 @@ function Button() {
   //   }
   // };
 
-  const handleCLick = (e) => console.log(e);
+  // const handleCLick = (e) => console.log(e);
+  
+  const handleClick = (e) => e.target.textContent = "Clicked ✅";
   return (
-    <button onClick={(e)=>handleCLick(e)}>Click me 😁</button>
+    // <button onClick={(e) => handleClick(e)}>Click me 😁</button>
+    <button onDOubleClick={(e) => handleClick(e)}>Click me 😁</button>
 
   )
 }
