@@ -27,8 +27,11 @@ function App2() {
       <Student name="Bernard" age={30} isStudent={false} location="Amasaman" />
       <Student name="Fenuku Reynolds" age={19} isStudent={true} location="Pokuase" />
       <UserGreeting isLoggedIn={true} userName="Psammy" />
-      <List items={fruits} category="Fruits" />
-      <List items={vegetables} category="Veggies" />
+    
+    {/* rendering only if the fruits array is not null */}
+      {fruits.length > 0 ? <List items={fruits} category="Fruits" /> : null}
+      {/*using the and operator to render if only the array is not null which will make the statement true*/}
+      {vegetables.length>0 &&<List items={vegetables} category="Veggies" />}
     </>
   );
 } 
