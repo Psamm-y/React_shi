@@ -27,10 +27,10 @@ function List(props) {
 }
 
 List.propTypes = {
-  items: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.number,
-    name: PropTypes.string,   calories: PropTypes.number
-  )}
-),
+  items: PropTypes.arrayOf(PropTypes.shape({ id: PropTypes.string, 
+                                             name: PropTypes.string,
+                                             calories: PropTypes.number}
+  )),
   category: PropTypes.string,
 }
 
