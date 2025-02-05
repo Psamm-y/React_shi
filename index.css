@@ -48,6 +48,9 @@ button:active {
   margin: 0.65em;
   padding: 0.1em;
 }
+.list-category:hover {
+  background-color: hsl(185, 100%, 40%);
+}
 .list-items li {
   color: hsl(0, 95%, 34%);
   cursor: pointer;
