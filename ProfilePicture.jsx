@@ -2,10 +2,10 @@
 function ProfilePicture() {
   const imageUrl = './src/assets/download.jpeg';
 
-  const handleCLick = () => (console.log("Ouch"));  
+  const handleCLick = (e) => e.target.style.display="none";  
 return (
     <>
-    <img onClick={handleCLick } src={imageUrl}></img>
+    <img onClick={(e)=>handleCLick(e) } src={imageUrl}></img>
     
     </>
   )
