@@ -36,3 +36,25 @@ button:active {
   width: max-content;
   border-radius: 0.2em;
 }
+
+/*List class*/
+.list-category {
+  font-weight: bold;
+  font-size: 2em;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 5px;
+  background-color: hsl(185, 100%, 50%);
+  margin: 0.65em;
+  padding: 0.1em;
+}
+.list-items li {
+  color: hsl(0, 95%, 34%);
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+.list-items li:hover {
+  color: rgb(143, 137, 137);
+}

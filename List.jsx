@@ -1,4 +1,4 @@
-
+import propTypes from 'prop-types';
 function List(props) {
   
   const itemList = props.items;
@@ -17,12 +17,17 @@ function List(props) {
   const ListItems = highCalItems.map(item => <li key={item.id}>{item.name}: &nbsp; <em> <b>{item.calories}</b></em></li>)
   return (
     <>
-      <h3>{category}</h3>
-    <ol>
+      <h3 className='list-category'>{category}</h3>
+    <ol className='list-items'>
       {ListItems}
       </ol>
     </>
   )
 
+}
+
+List.propTypes = {
+  items: propTypes.array,
+  category: propTypes.string,
 }
   export default List;
