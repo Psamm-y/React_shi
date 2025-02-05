@@ -19,7 +19,7 @@ function App2() {
       <Student name="Bernard" age={30} isStudent={false} location="Amasaman" />
       <Student name="Fenuku Reynolds" age={19} isStudent={true} location="Pokuase" />
       <UserGreeting isLoggedIn={true} userName="Psammy" />
-      <List />
+      <List items={fruits} category="Fruits" />
     </>
   );
 } 
