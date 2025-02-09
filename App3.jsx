@@ -7,7 +7,7 @@ function App3() {
     <>
       <Button />
       <ProfilePicture />
-      <MyComponent />
+      <MyComponent name="Samuel" />
     </>
     
   )

@@ -1,10 +1,11 @@
 import React, { useState} from 'react';
-function MyComponent() {
+function MyComponent(props) {
 
   const [name, setName] = useState("Guest");
   const [age, setAge] = useState(0);
+  const [isEmployed, setIsEmployed] = useState(false);
   const updateName = () => {
-    setName("Adutwumwaa Theresa");
+    setName(props.name);
   }
 
 
@@ -15,6 +16,10 @@ function MyComponent() {
   const setInitial = () => {
     setAge(0);
   }
+
+  const setEmploymentStatus = () => {
+    setIsEmployed(!isEmployed);
+  }
   return (
     <>
       <p>Name: {name}</p>
@@ -24,8 +29,8 @@ function MyComponent() {
       <button onClick={incrementAge}>Increment Age</button>
       <button onClick={setInitial}>Set Initial</button>
       
-          <p>Name: {name}</p>
-      <button onClick = {updateName}>Toggle status</button>
+          <p>Employement status: {isEmployed?"Employed" : "Looking for a job"}</p>
+      <button onClick = {setEmploymentStatus}>Toggle status</button>
   </>)
 }
 export default MyComponent;
