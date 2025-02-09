@@ -5,9 +5,9 @@ import Counter from './Counter.jsx';
 function App3() {
   return (
     <>
-      <Button />
+      {/* <Button />
       <ProfilePicture />
-      <MyComponent name="Samuel" />
+      <MyComponent name="Samuel" /> */}
       <Counter/>
     
       </>
