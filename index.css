@@ -2,7 +2,7 @@ p {
   color: rgb(30, 30, 128);
   font-style: italic;
 }
-button {
+/* button {
   background-color: hsl(160, 69%, 53%);
   color: white;
   padding: 0.5rem;
@@ -11,7 +11,7 @@ button {
   transition: all 0.1s;
   border-radius: 0.2em;
   cursor: pointer;
-}
+} */
 button:active {
   box-shadow: none;
   margin: 2px 0 0 2px;
