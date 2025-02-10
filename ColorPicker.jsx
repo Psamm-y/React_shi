@@ -14,7 +14,7 @@ function ColorPicker() {
           <p>Selected color: {color}</p>
         </div>
         <label >Select a color</label>
-        <input type="color" onChange={handleColorChange}/>
+        <input value={color} type="color" onChange={handleColorChange}/>
       </div>
       </>
       
