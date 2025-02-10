@@ -3,6 +3,9 @@ import { useState } from "react";
 function Car() {
   const [car, setCar] = useState({year: 2024, make:"Ford", model:"Mustang"});  
 
+  function handleYearChange(event) {
+    setCar(...car, year=event.target,value)
+  }
 
 
   return (
