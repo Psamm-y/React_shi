@@ -7,7 +7,7 @@ function App3() {
     <>
       {/* <Button />
       <ProfilePicture />
-      <MyComponent name="Samuel" /> */}
+      <MyComponent name="Samuel"1 /> */}
       <Counter/>
     
       </>
