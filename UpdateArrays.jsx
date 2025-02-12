@@ -6,6 +6,7 @@ function UpdateArrays() {
   
   function handleAddFood() {
     const newFood = document.getElementById("foodInput").value;
+    document.getElementById("foodInput").value = "";
   }
   return (
     <div>
