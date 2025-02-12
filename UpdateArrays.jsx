@@ -7,6 +7,12 @@ function UpdateArrays() {
   function handleAddFood() {
     const newFood = document.getElementById("foodInput").value;
     document.getElementById("foodInput").value = "";
+
+    setFoods(()=> [...foods,newFood])
+  }
+
+  function handleRemoveFood() {
+    setFoods.filter(_,i)
   }
   return (
     <div>
@@ -19,6 +25,7 @@ function UpdateArrays() {
       </ul>
       <input type="text" id="foodInput" placeholder="Please Enter food name" />
       <button onClick={handleAddFood}>Add food</button>
+      <button onClick={handleRemoveFood}>Remove Food</button>
     </div>
   )
 }
