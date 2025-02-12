@@ -4,7 +4,7 @@ function App4() {
   
   return (
     <>
-    {/* <Onchange/> */}
+     <Onchange/>
     <ColorPicker/>
     </>
   )
