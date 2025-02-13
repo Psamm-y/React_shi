@@ -16,7 +16,7 @@ function UpdateArrays() {
     const resultFoodIndex = parseInt((document.getElementById("foodRemove").value));
         document.getElementById("foodRemove").value = "";
 
-    setFoods(()=>[...foods,foods.delete(resultFood)])
+    setFoods((f) => f.filter((_, i) => i !== resultFoodIndex));
   }
   return (
     <div>
@@ -30,7 +30,7 @@ function UpdateArrays() {
       <input type="text" id="foodInput" placeholder="Please enter food name" />
       <button onClick={handleAddFood}>Add food</button> <br />
       <input id="foodRemove" type="number" placeholder="Enter index of food" />
-      <button onClick={()=>handleRemoveFood(index)}>Remove Food</button>
+      <button onClick={handleRemoveFood}>Remove Food</button>
     </div>
   )
 }
