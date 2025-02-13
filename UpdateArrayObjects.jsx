@@ -12,7 +12,12 @@ function UpdateArrayObjects() {
                     make: carMake,
                     model: carModel
     }
-    setCars(c=>[...c,newCar])
+    setCars(c => [...c, newCar])
+    
+    //setting input fields to how they were before
+    setCarMake("");
+    setCarModel("")
+    setCarYear(new Date().getFullYear())
     }
   function handleRemoveCar() {
     
@@ -36,7 +41,9 @@ function UpdateArrayObjects() {
       <h3>List of Car Objects</h3>
       <ul>
         {cars.map((car, index)=> 
-        <li key={index}>{car.year}</li>)
+          <li key={index}>
+            {car.year} {car.make} {car.model}
+          </li>)
         }
       </ul>
       <input type="number" value={carYear} onChange={handleYearChange}/> <br/>
