@@ -28,6 +28,13 @@ function UpdateArrayObjects() {
 
   return (
     <div>
+      <h3>List of Car Objects</h3>
+      <ul>
+
+      </ul>
+      <input type="number" />
+      <input type="text" />
+      <input type="text" />
     </div>
   )
 }
