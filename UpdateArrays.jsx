@@ -16,7 +16,11 @@ function UpdateArrays() {
     const resultFoodIndex = parseInt((document.getElementById("foodRemove").value));
         document.getElementById("foodRemove").value = "";
 
-    setFoods((f) => f.filter((_, i) => i !== resultFoodIndex));
+    if (resultFoodIndex >= 0 && resultFoodIndex < foods.length) {
+          setFoods((f) => f.filter((_, i) => i !== resultFoodIndex));
+    } else {
+      alert("Invalid index")
+    }
   }
   return (
     <div>
