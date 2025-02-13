@@ -19,8 +19,8 @@ function UpdateArrayObjects() {
     setCarModel("")
     setCarYear(new Date().getFullYear())
     }
-  function handleRemoveCar() {
-    
+  function handleRemoveCar(index) {
+    setCars(c=> c.filter((_, i) => i !== index));
   }
   function handleYearChange(event) {
     setCarYear(event.target.value)
@@ -41,7 +41,7 @@ function UpdateArrayObjects() {
       <h3>List of Car Objects</h3>
       <ul>
         {cars.map((car, index)=> 
-          <li key={index}>
+          <li key={index} onClick={()=>handleRemoveCar(index)}>
             {car.year} {car.make} {car.model}
           </li>)
         }
