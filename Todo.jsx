@@ -21,7 +21,7 @@ function Todo() {
   }
   return (
     <>
-      <div className="to-do-list"></div>
+      <div className="to-do-list">
       <h1>To-Do List</h1>
 
       <div>
@@ -52,7 +52,8 @@ function Todo() {
               ⬇️
             </button>
           </li>)}
-      </ol>
+        </ol>
+        </div>
     </>
 )
 }

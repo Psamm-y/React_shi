@@ -130,6 +130,27 @@ input[type='color'] {
 }
 /* todo list styles */
 .to-do-list {
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 100px;
+}
+.to-do-list h1 {
+  font-size: 3rem;
+}
+button {
+  color: white;
+  font-size: 0.7rem;
+  font-weight: bold;
+  background-color: rgb(118, 118, 118);
+  border: none;
+  border-radius: 2px;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.5 ease;
+}
+.add-button {
+  background-color: rgb(7, 196, 7);
+}
+.add-button:hover {
+  background-color: rgb(0, 115, 0);
 }
