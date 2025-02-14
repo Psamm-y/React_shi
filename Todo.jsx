@@ -2,10 +2,10 @@ import React,{useState} from "react";
 
 function Todo() {
   const [tasks, setTasks] = useState([]);
-  const [newTasks, setNewTasks] = useState([]);
+  const [newTask, setNewTask] = useState([]);
 
   function handleInputChange(event) {
-    
+    setNewTask(event.target.value)
   }
   function addTask() {
     
@@ -25,7 +25,15 @@ function Todo() {
       <h1>To-Do List</h1>
 
       <div>
-        <input type="text" />
+        <input type="text"
+        placeholder="Enter a task..."
+          value={newTask}
+          onChange={handleInputChange} />
+        <button
+          className="add-button"
+        onClick={addTask}>
+          Add
+        </button>
       </div>
     </>
 )
