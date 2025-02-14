@@ -130,5 +130,6 @@ input[type='color'] {
 }
 /* todo list styles */
 .to-do-list {
-  text-align: center;
+  font-family: Arial;
+  margin-top: 100px;
 }
