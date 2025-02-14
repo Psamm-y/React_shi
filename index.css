@@ -129,3 +129,6 @@ input[type='color'] {
   width: 50px;
 }
 /* todo list styles */
+.to-do-list {
+  text-align: center;
+}
