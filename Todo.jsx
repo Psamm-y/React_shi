@@ -22,7 +22,11 @@ function Todo() {
   return (
     <>
       <div className="to-do-list"></div>
-      <h1></h1>
+      <h1>To-Do List</h1>
+
+      <div>
+        <input type="text" />
+      </div>
     </>
 )
 }
