@@ -175,3 +175,9 @@ button {
   font-size: 1rem;
   outline: none;
 }
+ol {
+  padding: 0;
+}
+li {
+  display: flex;
+}
