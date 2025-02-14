@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 
 function Todo() {
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useState(["Eat breakfast","Take a shower","Walk the dog"]);
   const [newTask, setNewTask] = useState([]);
 
   function handleInputChange(event) {
