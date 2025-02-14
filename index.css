@@ -139,18 +139,39 @@ input[type='color'] {
 }
 button {
   color: white;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: bold;
   background-color: rgb(118, 118, 118);
   border: none;
   border-radius: 2px;
   padding: 0.3rem 0.5rem;
   cursor: pointer;
+  margin: 2px 2px;
   transition: background-color 0.5 ease;
 }
 .add-button {
   background-color: rgb(7, 196, 7);
+  transition: background-color 0.3s ease;
 }
 .add-button:hover {
   background-color: rgb(0, 115, 0);
+}
+.delete-button {
+  background-color: rgb(202, 4, 4);
+  transition: background-color 0.3s ease;
+}
+.delete-button:hover {
+  background-color: rgb(119, 0, 0);
+}
+.move-button {
+  background-color: rgb(0, 132, 255);
+  transition: background-color 0.3s ease;
+}
+.move-button:hover {
+  background-color: rgb(0, 89, 172);
+}
+.to-do-list input[type='text'] {
+  color: rgba(0, 0, 0, 0.471);
+  font-size: 1rem;
+  outline: none;
 }
