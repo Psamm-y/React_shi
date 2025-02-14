@@ -35,6 +35,16 @@ function Todo() {
           Add
         </button>
       </div>
+      <ol>
+        {tasks.map((task, index) =>
+          <li key={index}>
+            <span className="text">{task}</span>
+            <button className="delete-button"
+            onChange={()=>deleteTask(index)}>
+              Delete
+            </button>
+          </li>)}
+      </ol>
     </>
 )
 }
