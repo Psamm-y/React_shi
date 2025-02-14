@@ -43,6 +43,14 @@ function Todo() {
             onChange={()=>deleteTask(index)}>
               Delete
             </button>
+            <button className="move-button"
+            onChange={()=>moveTaskUp(index)}>
+              ⬆️
+            </button>
+            <button className="move-button"
+            onChange={()=>moveTaskDown(index)}>
+              ⬇️
+            </button>
           </li>)}
       </ol>
     </>
