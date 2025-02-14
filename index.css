@@ -183,6 +183,9 @@ li {
   align-items: center;
   padding: 0;
   margin-bottom: 2px;
+  background-color: rgba(0, 0, 0, 0.078);
+  border: 1px solid rgba(205, 205, 205, 0.433);
+  border-radius: 2px;
 }
 .text {
   flex: 1;
