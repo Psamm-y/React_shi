@@ -15,7 +15,8 @@ function Todo() {
     
   }
   function deleteTask(index) {
-    
+    const updatdedTask = tasks.filter((_, i) => i !== index);
+    setTasks(t => [updatdedTask]);
   }
   function moveTaskUp(index) {
     
