@@ -15,11 +15,14 @@ function Todo() {
     
   }
   function deleteTask(index) {
-    const updatdedTask = tasks.filter((_, i) => i !== index);
-    setTasks(t => [updatdedTask]);
+    const updatedTasks = tasks.filter((_, i) => i !== index);
+    setTasks(updatedTasks);
   }
   function moveTaskUp(index) {
-    
+    if (index > 0) {
+      const updatedTasks = [...tasks];
+      [updatedTasks[index], updatedTasks[index - 1]] = [updatedTasks[index - 1], updatedTasks[index]];
+    }
   }
   function moveTaskDown() {
     
@@ -45,15 +48,15 @@ function Todo() {
           <li key={index}>
             <span className="text">{task}</span>
             <button className="delete-button"
-            onChange={()=>deleteTask(index)}>
+            onClick={()=>deleteTask(index)}>
               Delete
             </button>
             <button className="move-button"
-            onChange={()=>moveTaskUp(index)}>
+            onClick={()=>moveTaskUp(index)}>
               ⬆️
             </button>
             <button className="move-button"
-            onChange={()=>moveTaskDown(index)}>
+            onClick={()=>moveTaskDown(index)}>
               ⬇️
             </button>
           </li>)}
