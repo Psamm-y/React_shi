@@ -2,13 +2,14 @@ import React,{useState} from "react";
 
 function Todo() {
   const [tasks, setTasks] = useState(["Eat breakfast","Take a shower","Walk the dog"]);
-  const [newTask, setNewTask] = useState([]);
+  const [newTask, setNewTask] = useState("");
 
   function handleInputChange(event) {
     setNewTask(event.target.value)
   }
   function addTask() {
-    
+    setTasks(t => [...t, newTask]);
+    setNewTask("");
   }
   function deleteTask(index) {
     
