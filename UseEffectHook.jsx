@@ -13,7 +13,7 @@ function UseEffectHook() {
   }
   return (
     <>
-      <p style={{backgroundColor:{color}}}>Count: {count}</p>
+      <p style={{color:color}}>Count: {count}</p>
       <button onClick={addCount}>Add</button>
     </>
   )
