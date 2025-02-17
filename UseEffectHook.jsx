@@ -5,11 +5,12 @@ function UseEffectHook() {
 
 
   function addCount() {
-    
+    setCount(c => c + 1);
   }
   return (
     <>
       <p>Count: {count}</p>
+      <button onClick={addCount}>Add</button>
     </>
   )
 }
