@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function UseEffectHook() {
   const [count, setCount] = useState(0);
+  const [color, setColor] = useState("green");
 
   useEffect(() =>
   {
@@ -12,7 +13,7 @@ function UseEffectHook() {
   }
   return (
     <>
-      <p>Count: {count}</p>
+      <p style={{backgroundColor:{color}}}>Count: {count}</p>
       <button onClick={addCount}>Add</button>
     </>
   )
