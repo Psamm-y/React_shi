@@ -6,13 +6,13 @@ function UseEffectHook() {
 
   useEffect(() =>
   {
-    document.title=`Count: ${count}`
-},[count])
+    document.title=`Count: ${count} ${color}` 
+},[count, color])
   function addCount() {
     setCount(c => c + 1);
   }
   function changeColor() {
-    setColor("red")
+    setColor(c=>c==="green"?"red":"green")
   }
   return (
     <>
