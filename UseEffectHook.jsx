@@ -20,8 +20,8 @@ function UseEffectHook() {
   function changeColor() {
     setColor(c=>c==="green"?"red":"green")
   }
-  window.addEventListener("res", handleResize);
-
+  window.addEventListener("resize", handleResize);
+  
   function handleResize() {
     setWidth(window.innerWidth)
     setHeight(window.innerHeight)
