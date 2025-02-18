@@ -20,7 +20,12 @@ function UseEffectHook() {
   function changeColor() {
     setColor(c=>c==="green"?"red":"green")
   }
-  window.addEventListener("resize", handleResize);
+
+  useEffect(() =>
+  {
+    window.addEventListener("resize", handleResize);
+  console.log("Event listener added ")
+  },[])
   
   function handleResize() {
     setWidth(window.innerWidth)
