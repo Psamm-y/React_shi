@@ -8,6 +8,8 @@ function UseEffectHook() {
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
 
+ 
+
   useEffect(() =>
   {
     document.title=`Count: ${count} ${color}` 
@@ -18,11 +20,19 @@ function UseEffectHook() {
   function changeColor() {
     setColor(c=>c==="green"?"red":"green")
   }
+
+  function handleResize() {
+    setWidth(window.innerWidth)
+    setHeight(window.innerWidth)
+  }
   return (
     <>
       <p style={{color:color}}>Count: {count}</p>
       <button onClick={addCount}>Add</button>
       <button onClick={changeColor}>Change Color</button>
+
+      <p>Width: {width}px</p>
+      <p>Height: {height}px</p>
     </>
   )
 }
