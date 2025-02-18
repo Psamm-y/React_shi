@@ -4,6 +4,10 @@ function UseEffectHook() {
   const [count, setCount] = useState(0);
   const [color, setColor] = useState("green");
 
+
+  const [width, setWidth] = useState(window.innerWidth);
+  const [height, setHeight] = useState(window.innerHeight);
+
   useEffect(() =>
   {
     document.title=`Count: ${count} ${color}` 
