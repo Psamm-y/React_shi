@@ -11,10 +11,14 @@ function UseEffectHook() {
   function addCount() {
     setCount(c => c + 1);
   }
+  function changeColor() {
+    setColor("red")
+  }
   return (
     <>
       <p style={{color:color}}>Count: {count}</p>
       <button onClick={addCount}>Add</button>
+      <button onClick={changeColor}>Change Color</button>
     </>
   )
 }
