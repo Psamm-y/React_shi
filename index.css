@@ -207,16 +207,16 @@ body {
   min-height: 100vh;
 }
 .clock-container {
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(5px);
   padding: 10px 0;
   width: 100vw;
 }
 
 .clock {
   font-size: 3rem;
-  color: black;
+  color: rgb(255, 255, 255);
   font-family: monospace;
   font-weight: 600;
   text-align: center;
-  text-shadow: 2px 2px 2px rgb(165, 165, 165);
+  text-shadow: 2px 2px 2px rgb(8, 8, 8);
 }
