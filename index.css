@@ -207,7 +207,9 @@ body {
   min-height: 100vh;
 }
 .clock-container {
-  backdrop-filter: blur(500px);
+  backdrop-filter: blur(20px);
+  padding: 10px 0;
+  width: 100vw;
 }
 
 .clock {
