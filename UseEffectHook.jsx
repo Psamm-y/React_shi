@@ -27,6 +27,7 @@ function UseEffectHook() {
   console.log("Event listener added ")
   },[])
   
+  
   function handleResize() {
     setWidth(window.innerWidth)
     setHeight(window.innerHeight)
