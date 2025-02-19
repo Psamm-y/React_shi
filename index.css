@@ -193,3 +193,12 @@ li {
 .text {
   flex: 1;
 }
+/* DIgital Clock Styles */
+body {
+  background-image: url(assets/Spongebob.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  margin: 0;
+}
