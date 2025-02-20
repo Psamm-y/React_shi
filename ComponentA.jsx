@@ -2,7 +2,9 @@
 function ComponentA(){
 
   return(
-    <div className="box"> </div>
+    <div className="box">
+    <h1>Component A</h1>
+    </div>
   )
 
 }

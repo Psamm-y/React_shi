@@ -220,3 +220,8 @@ li {
   text-align: center;
   text-shadow: 2px 2px 2px rgb(8, 8, 8);
 }
+/* Componet A styles */
+.box {
+  border: 2px solid black;
+  padding: 1rem;
+}

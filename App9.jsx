@@ -1,7 +1,5 @@
 
-
-import ComponentA from "./ComponentA";
-import DigitalClock from "./DigitalClock";
+import ComponentA from "./ComponentA.jsx";
 
 function App9() {
   return (
