@@ -5,12 +5,11 @@ function DigitalClock() {
 
   const [time, setTime] = useState(new Date())
   
-  useEffect(() =>
-  {
+  useEffect(() => {
     const intervalId = setInterval(() => {
-      setTime(new Date(),  1000)
+      setTime(new Date(), 1000)
     })
-  })
+  }, []);
   return (
     <>
       <div className="clock">
