@@ -9,12 +9,24 @@ function DigitalClock() {
     const intervalId = setInterval(() => {
       setTime(new Date(), 1000)
     })
+
      return () =>
   {
     clearInterval(intervalId)
-  }
+  } 
   },[]
   );
+
+  function formatTime() {
+    const hours=time.getHours;
+    const minutes = time.getMinutes;
+    const seconds = time.getSeconds;
+
+    const meridiem = hours > 12 ? "PM" : "AM";
+
+    hours = hours % 12 || 12;
+  }
+
   return (
     <>
       <div className="clock">
