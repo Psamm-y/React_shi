@@ -14,25 +14,25 @@ function DigitalClock() {
   {
     clearInterval(intervalId)
   } 
-  },[]
-  );
+  },[]);
 
   function formatTime() {
-    const hours=time.getHours;
-    const minutes = time.getMinutes;
-    const seconds = time.getSeconds;
+    const hours=time.getHours();
+    const minutes = time.getMinutes();
+    const seconds = time.getSeconds();
 
     const meridiem = hours > 12 ? "PM" : "AM";
 
     hours = hours % 12 || 12;
-    return `${hours}:${minutes}:${seconds}`;
+
+    return `${hours}:${minutes}:${seconds} ${meridiem}`;
   }
 
   return (
     <>
       <div className="clock">
         <div className="clock-container">
-          <span>00:00:00</span>
+          <span>{formatTime()}</span>
         </div>
         
       </div>
