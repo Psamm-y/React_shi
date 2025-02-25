@@ -226,3 +226,22 @@ ol {
   padding: 1rem;
 }
 /* Navbar styles */
+nav {
+  background-color: aqua;
+  position: fixed;
+  top: -20;
+  margin: 0;
+  width: 100%;
+  padding: 0.5em;
+}
+.items {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.logo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  margin: 0;
+}
