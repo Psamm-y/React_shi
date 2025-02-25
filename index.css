@@ -229,7 +229,9 @@ ol {
 nav {
   background-color: aqua;
   position: fixed;
-  top: 10;
+  top: 1em;
+  right: 1em;
+  left: 1em;
   margin: 0;
   width: 100%;
   padding: 0.5em;
