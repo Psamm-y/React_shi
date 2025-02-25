@@ -233,14 +233,23 @@ nav {
   margin: 0;
   width: 100%;
   padding: 0.5em;
+  display: flex;
+  align-items: center;
+  right: -2;
 }
 .items {
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  padding: 0 0.2em;
 }
+
 .logo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: inline;
+  margin-right: 4em;
 }
 body {
   margin: 0;
