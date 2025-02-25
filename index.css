@@ -229,13 +229,12 @@ ol {
 nav {
   background-color: aqua;
   position: fixed;
-  top: -20;
+  top: 10;
   margin: 0;
   width: 100%;
   padding: 0.5em;
   display: flex;
   align-items: center;
-  right: -2;
 }
 .items {
   list-style: none;
