@@ -4,6 +4,7 @@ function Navbar() {
   return (
     <>
       <nav>
+        <div className="navbar">
         <div className="logo">
           QuickHomes
         </div>
@@ -13,7 +14,8 @@ function Navbar() {
           <li>About</li>
           <li>Contact</li>
           <li>Ratings</li>
-        </ul>
+          </ul>
+          </div>
       </nav>
     </>
   )
