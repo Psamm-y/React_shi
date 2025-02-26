@@ -7,6 +7,7 @@ function Navbar() {
         <div className="logo">
           QuickHomes
         </div>
+        <input className="search-bar" type="text"/>
         <ul className="items">
           <li>Home</li>
           <li>About</li>

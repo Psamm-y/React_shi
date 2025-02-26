@@ -235,10 +235,10 @@ nav {
   backdrop-filter: blur(15px);
   margin: 0;
   width: 100%;
-  padding: 0.5em 0em;
+  padding: 0.5em 1em;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: space-between;
 }
 .items {
   list-style: none;
@@ -260,4 +260,10 @@ nav {
 }
 body {
   margin: 0;
+}
+.search-bar {
+  outline: blue;
+  border-radius: 0.9em;
+  border: none;
+  height: 1.5em;
 }
