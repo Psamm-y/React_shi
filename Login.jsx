@@ -6,6 +6,7 @@ function Login() {
     <>
       <div className="login">
         <form>
+          <p>Sign Up</p>
           <label htmlFor="email">Email:</label> <br />
           <input id="email" type="text" placeholder="ampadupsamuel1@gmail.com"/> <br />
           <label htmlFor="name">Name:</label> <br />
