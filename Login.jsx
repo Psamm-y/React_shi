@@ -18,7 +18,8 @@ function Login() {
           <label htmlFor="email">Retype Password:</label> <br />
           <input id="password" type="text" placeholder="•••••••••••" /> <br />
           <div className="terms-and-conditions">
-            <input type="checkbox" id="agree" />p
+            <input type="checkbox" id="agree" />
+            <p>Agree to terms and conditions</p>
           </div>
         </form>
       </div>
