@@ -1,4 +1,10 @@
+import { useState } from 'react';
+
 function Login() {
+  const [password, setPassword] = useState();
+  const [newPassword, setnewPassword] = useState();
+
+  function handlePassword(event) {}
   return (
     <>
       <div className="login">
