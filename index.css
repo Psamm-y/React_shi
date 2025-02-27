@@ -291,7 +291,18 @@ body {
 .login {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: bisque;
   display: inline-block;
   padding: 3rem;
+  width: 15em;
+}
+.login input {
+  outline: none;
+  margin-bottom: 2em;
+  border-radius: 1px;
+  border: none;
+  height: 2em;
+  width: 100%;
 }
