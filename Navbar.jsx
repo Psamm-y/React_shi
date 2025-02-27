@@ -1,6 +1,11 @@
 
 function Navbar() {
   
+  function handleInput(event) {
+    
+  }
+
+
   return (
     <>
       <nav>
