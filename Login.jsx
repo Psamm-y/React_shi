@@ -9,7 +9,7 @@ function Login() {
             id="email"
             type="text"
             placeholder="ampadupsamuel1@gmail.com"
-          />{' '}
+          />
           <br />
           <label htmlFor="name">Name:</label> <br />
           <input id="name" type="text" placeholder="Fenuku Reynolds" /> <br />
@@ -19,7 +19,7 @@ function Login() {
           <input id="password" type="text" placeholder="•••••••••••" /> <br />
           <div className="terms-and-conditions">
             <input type="checkbox" id="agree" />
-            <p>Agree to terms and conditions</p>
+            <p>&nbsp;Agree to terms and conditions</p>
           </div>
         </form>
       </div>

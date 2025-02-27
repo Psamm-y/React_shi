@@ -295,6 +295,11 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(51, 234, 173);
+  background-image: linear-gradient(
+    to top right,
+    rgb(51, 234, 173),
+    rgb(10, 187, 128)
+  );
   display: inline-block;
   padding: 3rem;
   width: 15em;
@@ -310,13 +315,17 @@ body {
   width: 100%;
   padding: 0 0 0 0.3em;
 }
+.login input:focus {
+  background-color: rgb(177, 244, 244);
+  outline: solid 1px black;
+}
 .login form :first-child {
   line-height: 2em;
   text-align: center;
   font-weight: bold;
 }
 #agree {
-  font-size: 0.5em;
+  font-size: 0.3em;
   text-align: left;
   display: inline;
   margin: 0;
@@ -330,4 +339,5 @@ body {
 }
 #agree + p {
   display: inline;
+  font-size: 0.7rem;
 }
