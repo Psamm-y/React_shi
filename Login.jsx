@@ -20,9 +20,12 @@ function Login() {
           <div className="terms-and-conditions">
             <input type="checkbox" id="agree" />
             <p>
-              &nbsp;I agree to <a>terms and conditions</a>
+              &nbsp;I agree to the <a href="#">terms and conditions</a>
             </p>
           </div>
+          <p>
+            Have an account already? <a href="#">Login</a>
+          </p>
         </form>
       </div>
     </>

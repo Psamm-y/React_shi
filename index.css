@@ -268,13 +268,17 @@ body {
 }
 .items li {
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .items li:hover {
-  background-image: linear-gradient(
-    from bottom,
-    rgba(0, 255, 255, 0.445),
-    rgba(0, 255, 255, 0.445)
-  );
+  color: rgb(10, 187, 128);
+}
+.items li::after {
+  content: '';
+  width: 2px;
+  height: 2px;
+  background-color: red;
+  display: absolute;
 }
 .logo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
