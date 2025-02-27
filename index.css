@@ -255,7 +255,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
-  padding: 0 0.2em;
+  padding: 0 0.5em;
   position: relative;
   margin: 0 2em;
 }
