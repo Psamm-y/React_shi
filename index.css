@@ -276,6 +276,8 @@ body {
 }
 body {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 .search-bar {
   box-sizing: border-box;
@@ -287,6 +289,7 @@ body {
   padding: 0.5em;
 }
 .login {
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   background-color: bisque;
   display: inline-block;
