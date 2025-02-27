@@ -261,10 +261,13 @@ body {
   list-style: none;
   display: flex;
   width: 100%;
-  padding: 0 1.2em;
+  padding: 0;
   position: relative;
   margin: 0 1em;
   gap: 1em;
+}
+.items li {
+  cursor: pointer;
 }
 .items li:hover {
   background-image: linear-gradient(

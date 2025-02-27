@@ -19,7 +19,9 @@ function Login() {
           <input id="password" type="text" placeholder="•••••••••••" /> <br />
           <div className="terms-and-conditions">
             <input type="checkbox" id="agree" />
-            <p>&nbsp;Agree to terms and conditions</p>
+            <p>
+              &nbsp;I agree to <a>terms and conditions</a>
+            </p>
           </div>
         </form>
       </div>
