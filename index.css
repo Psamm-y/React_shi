@@ -266,8 +266,15 @@ body {
   padding: 0 1.2em;
   position: relative;
   margin: 0 2em;
+  gap: 50px;
 }
-
+.items li:hover {
+  background-image: linear-gradient(
+    from bottom,
+    rgba(0, 255, 255, 0.445),
+    rgba(0, 255, 255, 0.445)
+  );
+}
 .logo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: inline;
@@ -282,7 +289,7 @@ body {
 }
 .search-bar {
   box-sizing: border-box;
-  outline: blue;
+  outline: none;
   border-radius: 0.9em;
   border: none;
   height: 2em;
@@ -318,6 +325,7 @@ body {
 .login input:focus {
   background-color: rgb(177, 244, 244);
   outline: solid 1px black;
+  box-shadow: 2px 2px 3px black;
 }
 .login form :first-child {
   line-height: 2em;
@@ -325,11 +333,15 @@ body {
   font-weight: bold;
 }
 #agree {
-  font-size: 0.3em;
+  font-size: 0.4em;
   text-align: left;
   display: inline;
   margin: 0;
   width: max-content;
+}
+#agree:focus {
+  outline: none;
+  box-shadow: none;
 }
 .terms-and-conditions {
   text-align: left;
