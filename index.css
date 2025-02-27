@@ -260,13 +260,11 @@ body {
   box-sizing: border-box;
   list-style: none;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   width: 100%;
   padding: 0 1.2em;
   position: relative;
-  margin: 0 2em;
-  gap: 50px;
+  margin: 0 1em;
+  gap: 1em;
 }
 .items li:hover {
   background-image: linear-gradient(
