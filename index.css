@@ -288,6 +288,11 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+  background-image: linear-gradient(
+    to top right,
+    rgb(188, 223, 254),
+    rgb(232, 243, 248)
+  );
 }
 .search-bar {
   box-sizing: border-box;
