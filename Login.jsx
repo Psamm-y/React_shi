@@ -2,18 +2,11 @@ import { useState } from 'react';
 
 function Login() {
   const [password, setPassword] = useState();
-  const [newPassword, setNewPassword] = useState();
 
   function handlePassword(event) {
     setPassword = event.target.value;
   }
 
-  function handleNewPassword(event) {
-    setNewPassword = event.target.value;
-    const message =
-      password === newPassword ? 'Done!' : 'Passwords do not match';
-    alert(message);
-  }
   return (
     <>
       <div className="login">
@@ -27,8 +20,6 @@ function Login() {
             required
           />
           <br />
-          <label htmlFor="name">Name:</label> <br />
-          <input id="name" type="text" placeholder="Fenuku Reynolds" required />
           <br />
           <label htmlFor="email">New Password:</label> <br />
           <input id="password" type="text" placeholder="•••••••••••" /> <br />
