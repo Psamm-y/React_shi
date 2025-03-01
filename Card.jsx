@@ -1,4 +1,3 @@
-
 function Card() {
   return (
     <>
@@ -6,10 +5,8 @@ function Card() {
         <img src="" alt="" />
         <h2>Psammy</h2>
         <p>Psammy is a cat who loves to play with yarn.</p>
-        
-    </div>
+      </div>
     </>
   );
 }
-
 export default Card;
