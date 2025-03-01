@@ -1,12 +1,11 @@
-import Navbar from "./Navbar";
-import Login from "./Login";
+import Navbar from './Navbar';
+import Login from './Login';
+import SignUp from './SignUp';
 function App10() {
-  
   return (
     <>
-    <Navbar />
-      <Login />
-      </>
-  )
+      <SignUp />
+    </>
+  );
 }
 export default App10;
