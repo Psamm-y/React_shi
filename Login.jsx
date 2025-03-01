@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import SignUp from './SignUp';
 
 function Login() {
   const [password, setPassword] = useState();
@@ -23,7 +24,7 @@ function Login() {
           <label htmlFor="email">New Password:</label> <br />
           <input id="password" type="text" placeholder="•••••••••••" />
           <p className="redirect-to-signup">
-            New to QuickHomes? <a href="#">Sign up</a>
+            New to QuickHomes? <a href="SignUp.jsx">Sign up</a>
           </p>
         </form>
       </div>

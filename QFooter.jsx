@@ -1,4 +1,8 @@
 function QFooter() {
-  return <></>;
+  return (
+    <>
+      <footer></footer>
+    </>
+  );
 }
 export default QFooter;

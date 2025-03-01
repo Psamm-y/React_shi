@@ -47,7 +47,7 @@ function SignUp() {
             </p>
           </div>
           <p>
-            Have an account already? <a href="#">Login</a>
+            Have an account already? <a href="./Login.jsx">Login</a>
           </p>
         </form>
       </div>
