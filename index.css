@@ -295,6 +295,7 @@ body {
     rgb(232, 243, 248)
   );
   padding-top: 4rem;
+  height: 100vh;
 }
 .search-bar {
   box-sizing: border-box;
@@ -359,6 +360,7 @@ body {
   align-items: center;
   margin: 0;
 }
+.redirect-to-signup,
 #agree + p {
   display: inline;
   font-size: 0.7rem;
