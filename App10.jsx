@@ -4,8 +4,9 @@ import SignUp from './SignUp';
 function App10() {
   return (
     <>
-      <SignUp />
-      <Login />
+      {/* <SignUp />
+      <Login /> */}
+      <Navbar />
     </>
   );
 }
